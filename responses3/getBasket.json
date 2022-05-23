@@ -1,0 +1,42 @@
+{
+    "amount": 1800,
+    "countGoods": 6,
+    "contents": [
+      {
+        "id_product": 1,
+        "product_name": "Jacket",
+        "price": 1000,
+        "quantity": 1
+      },
+      {
+        "id_product": 2,
+        "product_name":"Shoes",
+        "price": 100,
+        "quantity": 1
+      },
+      {
+        "id_product": 3,
+        "product_name": "Shorts",
+        "price": 250,
+        "quantity": 1
+      },
+      {
+        "id_product": 4,
+        "product_name": "Trousers",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "id_product": 5,
+        "product_name": "Jacket blue",
+        "price": 150,
+        "quantity": 1
+      },
+      {
+        "id_product": 6,
+        "product_name": "Top",
+        "price": 150,
+        "quantity": 1
+      }
+    ]
+  }
