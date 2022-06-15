@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/public/style/normalize.css">
+    <link rel="stylesheet" href="src/public/style/style.css">
+</head>
+
+<body>
+    <div id="app">
+    <div class="top">
+        <div class="header">
+            <div class="leftHeader">
+                <img src="img/Forma1.png" alt="">
+          . <form action="#" class="search-form" @submit.prevent="filter">
+                    <input type="text" class="search-field" v-model="userSearch">
+                    <button class="btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <filter-el></filter-el>
+                </form>
+                <!-- <filter-el>filter</filter-el>-->
+            </div>
+
+            <div class="rightHeader">
+                <img class="headerBars" src="img/menu.png" alt="">
+                <img class="userIcon" src="img/icon.png" alt="">
+
+                <!--<span class="iconkorzina          cartIconWrap">
+                    <img class="korzina" src="img/korzina.png" alt="">
+                -->
+                <div class="cart">
+               
+                    <cart ref="cart"></cart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand">
+
+        <div class="brandI">
+            <div class="brandLeft">
+                <img src="img/manicon.jpg" alt="">
+            </div>
+            <div class="brandRight">
+                <div class="brandPromo">
+                    <div>THE BRAND</div>
+                    <div>OF LUXERIOUS <span>FASHION</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brandD hidden">
+            <div class="menu">
+                <img class="menuClose" src="img/krestic.png" alt="">
+
+                <div class="menuTitle">MENU</div>
+
+                <div class="menuUnit">
+                    <div class="menuHeader">
+                        MAN
+                    </div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">T-Shirts</a>
+                </div>
+
+                <div class="menuUnit">
+                    <div class="menuHeader">
+                        WOMAN
+                    </div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Jackets & Coats</a>
+                    <a href="#">Polos</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Shirts</a>
+                </div>
+
+                <div class="menuUnit">
+                    <div class="menuHeader">
+                        KIDS
+                    </div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Jackets & Coats</a>
+                    <a href="#">Polos</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Bags</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cartbox container">
+        <div class="cartWomen">
+            <img class="carttovar" src="img/Women.jpg" alt="">
+            <div class="cartTitle">
+                <div class="cartTop">
+                    30% OFF
+                </div>
+                <div class="cartBottom">
+                    FOR WOMEN
+                </div>
+            </div>
+        </div>
+        <div class="cartMen">
+            <img class="carttovar" src="img/Men.jpg" alt="">
+            <div class="cartTitle">
+                <div class="cartTop">
+                    HOT DEAL
+                </div>
+                <div class="cartBottom">
+                    FOR MEN
+                </div>
+            </div>
+        </div>
+        <div class="cartKids">
+            <img class="carttovar" src="img/children.jpg" alt="">
+            <div class="cartTitle">
+                <div class="cartTop">
+                    NEW ARRIVALS
+                </div>
+                <div class="cartBottom">
+                    FOR KIDS
+                </div>
+            </div>
+        </div>
+        <div class="cartAccesories">
+            <img class="cartImg" src="img/Accesories.jpg" alt="">
+            <div class="cartTitle">
+                <div class="cartTop">
+                    LUXIROUS & TRENDY
+                </div>
+                <div class="cartBottom">
+                    ACCESORIES
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured container">
+        <h2 class="featuredHeader">Fetured Items</h2>
+        <div class="featuredTitle">Shop for items based on what we featured in this week</div>
+
+       <!-- <div class="featuredItems">
+
+
+            <div id="picture" class="products"> </div>-->
+
+
+            <products ref="products"></products>
+            <error ref="error"></error>
+      <!--  <button class="Browse">Browse All Product</button>-->
+     
+    </div>
+
+    <div class="services">
+        <div class="container">
+
+            <div class="serivceUnit">
+                <img src="img/services/delivery.svg" alt="">
+                <div class="servicesTitle">
+                    Free Delivery
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="img/services/discount.svg" alt="">
+                <div class="servicesTitle">
+                    Sales & discounts
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="img/services/assurance.svg" alt="">
+                <div class="servicesTitle">
+                    Quality assurance
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+
+            <div class="subscribeLeft">
+                <img src="img/subscribeUser.png" alt="">
+                <div class="subscribeUserText">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+            </div>
+
+            <div class="subscribeRight">
+                <div class="subscribeTitle">
+                    SUBSCRIBE
+                </div>
+                <div class="subscribeText">
+                    FOR OUR NEWLETTER AND PROMOTION
+                </div>
+                <form action="" class="subscribeForm">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footerLeft">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerRight">
+                &copy; 2021  Brand  All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="src/public/js/CartComp.js"></script>
+    <script src="src/public/js/ProducComp.js"></script>
+    <script src="src/public/js/main.js"></script>
+    <script src="src/public/js/FilterComp.js"></script>
+    <script src="src/public/js/ErrorComp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src/public/js/CartTovar.js"></script>
+</body>
+
+</html>
